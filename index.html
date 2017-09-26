@@ -37,24 +37,40 @@
     <div class="nav-bar-mobile-overlay"></div>
 
     <ul id="nav-bar-mobile-ul">
-        <li><a href="#Contact">CONTACT</a></li>
-        <li><a href="#experience">EXPERIENCE</a></li>
-        <li><a href="#Projects">PROJECTS</a></li>
-        <li><a href="#home">HOME</a></li>
+        <li>
+            <button onclick="scrollTo('#home')">HOME</button>
+        </li>
+        <li>
+            <button onclick="scrollTo('#projects')">PROJECTS</button>
+        </li>
+        <li>
+            <button onclick="scrollTo('#experience')">EXPERIENCE</button>
+        </li>
+        <li>
+            <button onclick="scrollTo('#contact')">CONTACT</button>
+        </li>
     </ul>
 </nav>
 
 <nav class="nav-desktop">
     <ul id="nav-bar-ul">
-        <li><a href="#Contact">CONTACT</a></li>
-        <li><a href="#experience">EXPERIENCE</a></li>
-        <li><a href="#Projects">PROJECTS</a></li>
-        <li><a href="#home">HOME</a></li>
+        <li>
+            <button onclick="scrollTo('#contact')">CONTACT</button>
+        </li>
+        <li>
+            <button onclick="scrollTo('#experience')">EXPERIENCE</button>
+        </li>
+        <li>
+            <button onclick="scrollTo('#projects')">PROJECTS</button>
+        </li>
+        <li>
+            <button onclick="scrollTo('#home')">HOME</button>
+        </li>
     </ul>
 </nav>
 
 
-<body class="body">
+<body class="body" id="home">
 
 <div class="language-ticker">
     <p id="header-name-top">SOFTWARE</p>
@@ -70,7 +86,7 @@
 </div>
 
 <div class="main-content">
-    <div id="home" class="card">
+    <div class="card">
         <h1 id="hello">System.GetString("Hello");</h1>
         <p>
             Hello, I'm Lewis Johnson. I'm a student at the <a href="https://www.sussex.ac.uk">University of Sussex</a>
@@ -94,50 +110,11 @@
         <h1 id="cv">Curriculum Vitae.</h1>
         <p>A copy of my CV is available on request.</p>
     </div>
-
-    <div class="card">
-        <h1 id="experience">Experience.</h1>
-        <h3>I have plenty of experience with:</h3>
-        <ul>
-            <li>Web development (CSS, HTML. JQuery, etc..)</li>
-            <li>C#</li>
-            <li>Java</li>
-            <li>Modern C++</li>
-            <li>Python 3.X</li>
-            <li>Unity3D</li>
-            <li>Unreal Engine</li>
-        </ul>
-        <h3>I'm familiar with:</h3>
-        <ul>
-            <li>Python 2.7</li>
-            <li>F#</li>
-            <li>ASP.NET</li>
-        </ul>
-    </div>
-
-    <div class="card">
-        <h1 id="achievements">Achievements.</h1>
-        <div class="section-content">
-            <ul class="experience">
-                <li><a href="http://www.ewbchallenge.org/">Engineers Without Borders | Finalist</a></li>
-                <li><a href="http://www.sussex.ac.uk/ei/internal/forstudents/globaldesignchallenge">Sussex Global Design
-                    Challenge | Winner 2016</a></li>
-                <li><a href="http://www.autodesk.co.uk/training-and-certification/certification">Autodesk Maya 2015 |
-                    Certified Professional</a></li>
-                <li>
-                    <a href="https://www.worldskillsuk.org/worldskills-uk-competitions/find-a-competition/media-and-creative/3d-digital-game-art">Programmr
-                        London Hackathon | 2nd Place</a></li>
-                <li><a href="http://www.programmr.com/hired_london_hackathon">World Skills 3D modelling | 3rd Place</a>
-                </li>
-                <li>Published apps on the Windows Store</li>
-            </ul>
-        </div>
-    </div>
 </div>
 
 <div class="main-content">
     <div class="card">
-        <h1 id="Projects">Projects.</h1>
+        <h1 id="projects">Projects.</h1>
         <ul class="projects">
             <li>
                 <h1>Vent.</h1>
@@ -228,15 +205,34 @@
         <h1>More Projects.</h1>
         <ul class="projects">
             <li>
-                <!--<img src="assets/win-10.jpg" style="width: 50px;">-->
+                <h1>Unity UI Examples</h1>
+                <h2>Unity3D - C# - Python 3</h2>
+
+                <div class="project-logos">
+                    <img src="assets/unity.png">
+                    <img src="assets/dotnet.png">
+                    <img src="assets/python.png">
+                </div>
+                <p>
+                    Cycle London is 2 projects. The Windows 8 app was developed first, then succeeded by the Windows
+                    10
+                    UWP app, London Universal.
+                    The app uses mapping &amp; TFL (Transport For London) API's to help Londoners navigate London by
+                    bike
+                    with ease. Please visit the repo on GitHub.
+                    <br><br>
+                    <a class="border smooth" href="https://github.com/LewisJohnson/unity-ui-examples">Unity UI Examples Repository</a>
+                </p>
+            </li>
+
+            <li>
                 <h1>Cycle London</h1>
                 <h2>C# - XAML - Windows 8.X Universal</h2>
-                <!--<ul class="language-stats">-->
-                <!--<li class="lang-csharp" data-percentage="100%">-->
-                <!--<span>C#</span>-->
-                <!--<span class="lang-percentage">100%</span>-->
-                <!--</li>-->
-                <!--</ul>-->
+
+                <div class="project-logos">
+                    <img src="assets/dotnet.png">
+                    <img src="assets/win10.png">
+                </div>
                 <p>
                     Cycle London is 2 projects. The Windows 8 app was developed first, then succeeded by the Windows
                     10
@@ -257,6 +253,10 @@
             <li>
                 <h1>London Universal</h1>
                 <h2>C# - XAML - Windows 10 UWP</h2>
+                <div class="project-logos">
+                    <img src="assets/dotnet.png">
+                    <img src="assets/win10.png">
+                </div>
                 <p>
                     London Universal is an app, which helps Londoners navigate the city by showing travel
                     information
@@ -268,13 +268,16 @@
                     <br><br>
                     <a class="border smooth" href="https://www.youtube.com/watch?v=TmxVBkGhrqg">London Universal
                         Demonstration (YouTube)</a>
-
                 </p>
             </li>
 
             <li>
                 <h1>SketcherBook Pro</h1>
                 <h2>C# - XAML - Windows 10 UWP</h2>
+                <div class="project-logos">
+                    <img src="assets/dotnet.png">
+                    <img src="assets/win10.png">
+                </div>
                 <p>
                     SketcherBook Pro is a full featured drawing app for Windows 10.
                     The app includes a bunch of great features, including editable layers,
@@ -288,7 +291,13 @@
             </li>
             <li>
                 <h1>p2crypt</h1>
-                <h2>C# - XAML - Windows WPF</h2>
+                <h2>C# - Windows - Linux - Mac</h2>
+                <div class="project-logos">
+                    <img src="assets/dotnet.png">
+                    <img src="assets/win10.png">
+                    <img src="assets/linux.png">
+                    <img src="assets/apple.png">
+                </div>
                 <p>
                     p2crypt was an open source, peer-to-peer, end-to-end encrypted chat client for Windows, with
                     MacOS and Linux support in the pipeline.
@@ -301,13 +310,13 @@
                         Fork)</a>
                 </p>
             </li>
-            <li>
+            <li class="project-wide">
                 <h1>Even More Projects</h1>
                 <h2>GitHub &amp; Visual Studio Online</h2>
                 <p>
-                    I have lot's of project for you to browse on my GitHub profile. If you are a company, I am
-                    willing
-                    to send more project's (Private Repositories on Visual Studio Online) include source code
+                    These are just my favourite projects, I have heaps more for you to browse on my GitHub profile. If
+                    you are a company, I am
+                    willing to send more project's (private repositories on Visual Studio Online) include source code
                     samples.
                     <br><br>
                     <a class="border smooth" href="https://github.com/LewisJohnson/">GitHub Profile</a>
@@ -318,43 +327,85 @@
 </div>
 
 <div class="main-content">
+    <div class="card">
+        <h1 id="experience">Experience.</h1>
+        <h3>I have plenty of experience with:</h3>
+        <ul>
+            <li>Web development (CSS, HTML. JQuery, etc..)</li>
+            <li>C#</li>
+            <li>Java</li>
+            <li>Modern C++</li>
+            <li>Python 3.X</li>
+            <li>Unity3D</li>
+            <li>Unreal Engine</li>
+        </ul>
+        <h3>I'm familiar with:</h3>
+        <ul>
+            <li>Python 2.7</li>
+            <li>F#</li>
+            <li>ASP.NET</li>
+        </ul>
+    </div>
 
-    < class="card">
-    <h1 id="Contact">Contact Me</h1>
+    <div class="card">
+        <h1 id="achievements">Achievements.</h1>
+        <div class="section-content">
+            <ul class="experience">
+                <li><a href="http://www.ewbchallenge.org/">Engineers Without Borders | Finalist</a></li>
+                <li><a href="http://www.sussex.ac.uk/ei/internal/forstudents/globaldesignchallenge">Sussex Global Design
+                    Challenge | Winner 2016</a></li>
+                <li><a href="http://www.autodesk.co.uk/training-and-certification/certification">Autodesk Maya 2015 |
+                    Certified Professional</a></li>
+                <li>
+                    <a href="https://www.worldskillsuk.org/worldskills-uk-competitions/find-a-competition/media-and-creative/3d-digital-game-art">Programmr
+                        London Hackathon | 2nd Place</a></li>
+                <li><a href="http://www.programmr.com/hired_london_hackathon">World Skills 3D modelling | 3rd Place</a>
+                </li>
+                <li>Published apps on the Windows Store</li>
+            </ul>
+        </div>
+    </div>
+</div>
 
-    <ul class="contact-list">
-        <li class="border smooth">
-            <a href="mailto:lewisjohnsondev@gmail.com?Subject=-SUBJECT%20(From%20portfolio%20website)">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <p>lewisjohnsondev@gmail.com</p>
-            </a>
-        </li>
-        <li class="border smooth">
-            <a href="tel:07762097588">
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                <p>07762097588</p>
-            </a>
-        </li>
-        <li class="border smooth">
-            <a href="https://github.com/LewisJohnson">
-                <i class="fa fa-github" aria-hidden="true"></i>
-                <p>GitHub</p>
+<div class="main-content">
 
-            </a>
-        </li>
-        <!--<li class="border smooth">-->
-        <!--<a href="https://twitter.com/lewisjohnsondev">-->
-        <!--<i class="fa fa-twitter" aria-hidden="true"></i>-->
-        <!--<p>Twitter</p>-->
-        <!--</a>-->
-        <!--</li>-->
-        <li class="border smooth">
-            <a href="http://stackoverflow.com/story/lewisjohnson">
-                <i class="fa fa-stack-overflow" aria-hidden="true"></i>
-                <p>Stack Overflow Story</p>
-            </a>
-        </li>
-    </ul>
+    <div class="card">
+        <h1 id="contact">Contact Me</h1>
+
+        <ul class="contact-list">
+            <li class="border smooth">
+                <a href="mailto:lewisjohnsondev@gmail.com?Subject=-SUBJECT%20(From%20portfolio%20website)">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <p>lewisjohnsondev@gmail.com</p>
+                </a>
+            </li>
+            <li class="border smooth">
+                <a href="tel:07762097588">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <p>07762097588</p>
+                </a>
+            </li>
+            <li class="border smooth">
+                <a href="https://github.com/LewisJohnson">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                    <p>GitHub</p>
+
+                </a>
+            </li>
+            <!--<li class="border smooth">-->
+            <!--<a href="https://twitter.com/lewisjohnsondev">-->
+            <!--<i class="fa fa-twitter" aria-hidden="true"></i>-->
+            <!--<p>Twitter</p>-->
+            <!--</a>-->
+            <!--</li>-->
+            <li class="border smooth">
+                <a href="http://stackoverflow.com/story/lewisjohnson">
+                    <i class="fa fa-stack-overflow" aria-hidden="true"></i>
+                    <p>Stack Overflow Story</p>
+                </a>
+            </li>
+        </ul>
+    </div>
 </div>
 </body>
 </html>

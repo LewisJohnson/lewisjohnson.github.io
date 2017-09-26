@@ -60,7 +60,10 @@ ul {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    overflow: hidden;
 }
 
 .main-content {
@@ -188,7 +191,9 @@ ul {
     float: right;
 }
 
-.nav-desktop ul li a {
+.nav-desktop ul li button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
     color: white;
     font-weight: 300;
     text-decoration: none;
@@ -198,9 +203,13 @@ ul {
     padding: 2rem 1.2rem;
     margin: 0;
     transition: all 0.5s ease;
+    background: none;
+    border: none;
+    text-align: center;
+    font-size: 16px;
 }
 
-.nav-desktop ul > :first-child a {
+.nav-desktop ul > :first-child button {
     padding: 0.7rem 6.1rem 2rem 1.5rem;
     margin: 1.2rem 1rem 1rem;
     border: 2px solid white;
@@ -208,7 +217,7 @@ ul {
     max-height: 30px;
 }
 
-.nav-desktop ul li a:hover {
+.nav-desktop ul li button:hover {
     color: #96a7c1;
     font-weight: 600;
 }
@@ -230,17 +239,22 @@ ul {
     margin-top: 4rem;
 }
 
-.nav-mobile ul li a {
-    display: block;
-    width: 100%;
-    height: 100%;
+.nav-mobile ul > :last-child button {
+    background: white;
+    color: black;
+}
+
+.nav-mobile ul li button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
     color: white;
     font-weight: 300;
-    text-decoration: none;
     padding: 8px;
-    margin: 0;
     font-size: 20px;
-    margin-bottom: 5px;
+    margin: 0 0 5px;
+    background: none;
+    border: none;
+    text-align: left;
 }
 
 /* */
@@ -260,7 +274,7 @@ ul {
     transition: 0.3s opacity;
 }
 
-/* */
+/* Project */
 .projects {
     display: flex;
     flex-flow: wrap;
@@ -270,6 +284,10 @@ ul {
     width: 50%;
     display: inline-block;
     padding: 10px;
+}
+
+.projects .project-wide {
+    width: 100%;
 }
 
 .projects li h1 {
@@ -290,6 +308,18 @@ ul {
 
 .projects p {
     padding: 0;
+}
+
+.project-logos{
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-logos img{
+    height: 100%;
+    margin: 5px;
 }
 
 .source-yes {
@@ -408,7 +438,10 @@ ul.source-stats li h2 {
         margin: 1rem;
     }
 
-    /* Fix that shit up there */
+    .card ul{
+        padding: 0 1rem 1rem;
+    }
+
     .main-content {
         padding: 0;
     }

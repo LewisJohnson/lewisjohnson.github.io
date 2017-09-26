@@ -13,7 +13,7 @@ var languageList = [
     "Python"
 ];
 
-$(function(){
+$(function () {
     helloHeader = $("#hello");
     ham_el1 = $('.ham_1');
     ham_el2 = $('.ham_2');
@@ -42,8 +42,8 @@ $(function(){
         }
     });
 
-    $(window).scroll(function(){
-        var headerHeight = Number($(".header").height());
+    $(window).scroll(function () {
+        var headerHeight = $(".header").height();
         if ($(this).scrollTop() > (headerHeight / 2 - 80)) {
             $("#title-text").css({
                 'opacity': '0',
@@ -66,25 +66,11 @@ $(function(){
         }
     });
 
-    function hideHamburgerMenu() {
-        ham_el1.toggleClass("on");
-        ham_el2.toggleClass("on");
-        ham_el3.toggleClass("on");
-        $(".nav-mobile").toggleClass("open");
-        hamburger_hidden = true;
-    }
-
-    function showHamburgerMenu() {
-        ham_el1.toggleClass("on");
-        ham_el2.toggleClass("on");
-        ham_el3.toggleClass("on");
-        $(".nav-mobile").toggleClass("open");
-        hamburger_hidden = false;
-    }
-
     function HamburgerToggle() {
-        if (hamburger_hidden) showHamburgerMenu();
-        else hideHamburgerMenu();
+        ham_el1.toggleClass("on");
+        ham_el2.toggleClass("on");
+        ham_el3.toggleClass("on");
+        $(".nav-mobile").toggleClass("open");
     }
 
     function animateHelloHeader() {
@@ -96,6 +82,12 @@ $(function(){
         setTimeout(animateHelloHeader, 400);
     }
 });
+
+function scrollTo(id) {
+    $('html, body').animate({
+        scrollTop: $(id).offset().top - 83
+    }, 300);
+}
 
 function languageAnimate() {
     header_dev_text = $('#header-name-top');
