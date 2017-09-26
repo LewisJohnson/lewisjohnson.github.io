@@ -368,6 +368,14 @@ ul {
     border-bottom: 5px solid #42b458;
 }
 
+.lang-liquid {
+    border-bottom: 5px solid #898989;
+}
+
+.lang-other {
+    border-bottom: 5px solid #000000;
+}
+
 .source-stats {
     list-style: none;
     margin: 0 auto;
