@@ -1,428 +1,453 @@
 <!DOCTYPE html>
 <html lang="en-GB" xmlns="http://www.w3.org/1999/html">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Lewis Johnson</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lewis Johnson</title>
 
-    <link href="./styles.css" rel="stylesheet" type="text/css"/>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:1000,300,400,500,700' rel='stylesheet' type='text/css'>
+	<link href="./styles.css" rel="stylesheet" type="text/css"/>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:1000,300,400,500,700' rel='stylesheet' type='text/css'>
 
-    <script src="./jquery-3.2.1.min.js"></script>
-    <script src="./main.js"></script>
-
-    <script type="application/ld+json">
-        {
-            "@context": "http://schema.org/",
-            "@type": "Person",
-            "name": "Lewis Johnson",
-            "jobTitle": "Software Developer",
-            "telephone": "07762097588",
-            "url": "http://lewisdavidjohnson.com",
-            "email": "lewisjohnsondev@gmail.com"
-        }
-
-
-    </script>
+	<script src="./jquery-3.2.1.min.js"></script>
+	<script src="./main.js"></script>
 </head>
 
 <!-- Mobile Slider -->
 <nav class="nav-mobile">
-    <div class="hamburger-btn" id="hamburger">
-        <div class="ham_1"></div>
-        <div class="ham_2"></div>
-        <div class="ham_3"></div>
-    </div>
+	<div class="hamburger-btn" id="hamburger">
+		<div class="ham_1"></div>
+		<div class="ham_2"></div>
+		<div class="ham_3"></div>
+	</div>
 
-    <div class="nav-bar-mobile-overlay"></div>
+	<div class="nav-bar-mobile-overlay"></div>
 
-    <ul id="nav-bar-mobile-ul">
-        <li>
-            <button onclick="scrollTo('#home')">HOME</button>
-        </li>
-        <li>
-            <button onclick="scrollTo('#projects')">PROJECTS</button>
-        </li>
-        <li>
-            <button onclick="scrollTo('#experience')">EXPERIENCE</button>
-        </li>
-        <li>
-            <button onclick="scrollTo('#contact')">CONTACT</button>
-        </li>
-    </ul>
+	<ul id="nav-bar-mobile-ul">
+		<li>
+			<button onclick="scrollToAnchor('home')">HOME</button>
+		</li>
+		<li>
+			<button onclick="scrollToAnchor('cv')">CV</button>
+		</li>
+		<li>
+			<button onclick="scrollToAnchor('projects')">PROJECTS</button>
+		</li>
+		<li>
+			<button onclick="scrollToAnchor('experience')">EXPERIENCE</button>
+		</li>
+		<li>
+			<button onclick="scrollToAnchor('contact')">CONTACT</button>
+		</li>
+	</ul>
 </nav>
 
 <nav class="nav-desktop">
-    <ul id="nav-bar-ul">
-        <li>
-            <button onclick="scrollTo('#contact')">CONTACT</button>
-        </li>
-        <li>
-            <button onclick="scrollTo('#experience')">EXPERIENCE</button>
-        </li>
-        <li>
-            <button onclick="scrollTo('#projects')">PROJECTS</button>
-        </li>
-        <li>
-            <button onclick="scrollTo('#home')">HOME</button>
-        </li>
-    </ul>
+	<ul id="nav-bar-ul">
+		<li>
+			<button onclick="scrollToAnchor('contact')">CONTACT</button>
+		</li>
+		<li>
+			<button onclick="scrollToAnchor('experience')">EXPERIENCE</button>
+		</li>
+		<li>
+			<button onclick="scrollToAnchor('projects')">PROJECTS</button>
+		</li>
+		<li>
+			<button onclick="scrollToAnchor('cv')">CV</button>
+		</li>
+		<li>
+			<button onclick="scrollToAnchor('home')">HOME</button>
+		</li>
+	</ul>
 </nav>
 
 
 <body class="body" id="home">
 
 <div class="language-ticker">
-    <p id="header-name-top">SOFTWARE</p>
-    <p>DEVELOPER</p>
+	<p id="header-name-top">SOFTWARE</p>
+	<p>DEVELOPER</p>
 </div>
 
 <div class="header">
-    <h1 id="title-text">Lewis Johnson</h1>
-    <video autoplay loop>
-        <source src="assets/2017-09-06_23-02-24.mp4" type="video/mp4">
-    </video>
-    <div class="image-overlay"></div>
+	<h1 id="title-text">Lewis Johnson</h1>
+	<video autoplay loop>
+		<source src="assets/2017-09-06_23-02-24.mp4" type="video/mp4">
+	</video>
+	<div class="image-overlay"></div>
 </div>
 
 <div class="main-content">
-    <div class="card">
-        <h1 id="hello">System.GetString("Hello");</h1>
-        <p>
-            Hello, I'm Lewis Johnson. I'm a student at the <a href="https://www.sussex.ac.uk">University of Sussex</a>
-            currently studying computer science in my final year.
-            I'm currently employed as a full stack web developer at <a href="https://www.loulaanddeer.co.uk">Loula and
-            Deer</a> in Brighton, UK.
-            If you are interested, there is a list of personal projects and open source contributions for you to browse
-            at the bottom of the page.
-            <br><br>
-            Programming has been my passion for a seriously long time, so I have many years of experience in multiple
-            programming languages.
-            I have apps published on the Windows 8 and 10 store (Mobile &amp; Desktop), and Google Play store.
-            I have attended a fair few hackathons/competitions and placed well in every one I've attended.
-            <br><br>
-            If you feel like getting in touch with me, for any reason (including obtaining a copy of my CV) send me an
-            email or give me a call.
-        </p>
-    </div>
+	<div class="card">
+		<h1 id="hello">System.GetString("Hello");</h1>
+		<p>
+			Hello, I'm Lewis Johnson. I'm a student at the <a href="https://www.sussex.ac.uk">University of Sussex</a>
+			currently studying computer science in my final year.
+			I'm currently employed as a full stack web developer at <a href="https://www.loulaanddeer.co.uk">Loula and
+			Deer</a> in Brighton, UK.
+			If you are interested, there is a list of personal projects and open source contributions for you to browse
+			at the bottom of the page.
+			<br><br>
+			Programming has been my passion for a seriously long time, so I have many years of experience in multiple
+			programming languages.
+			I have apps published on the Windows 8 and 10 store (Mobile &amp; Desktop), and Google Play store.
+			I have attended a fair few hackathons/competitions and placed well in every one I've attended.
+			<br><br>
+			If you feel like getting in touch with me, for any reason (including obtaining a copy of my CV) send me an
+			email or give me a call.
+		</p>
+	</div>
 
-    <div class="card">
-        <h1 id="cv">Curriculum Vitae.</h1>
-        <p>A copy of my CV is available on request.</p>
-    </div>
+	<div class="card">
+		<h1 id="cv">Curriculum Vitae.</h1>
+		<p>A copy of my CV is available on request.</p>
+	</div>
 </div>
 
 <div class="main-content">
-    <div class="card">
-        <h1 id="projects">Projects.</h1>
-        <ul class="projects">
-            <li>
-                <h1>Vent.</h1>
-                <h2>Vent. A new idea for social media.</h2>
-                <div class="video-container">
-                    <iframe width="1280" height="720"
-                            src="https://www.youtube-nocookie.com/embed/VFuji611Vh4?rel=0&amp;controls=0&amp;showinfo=0?ecver=1"
-                            frameborder="0" allowfullscreen></iframe>
-                </div>
-                <h3 class="source-yes">Source code available on request.</h3>
-                <ul class="language-stats">
-                    <li class="lang-js" data-percentage="34.1%">
-                        <span>JavaScript</span>
-                        <span class="lang-percentage">34.1%</span>
-                    </li>
-                    <li class="lang-css" data-percentage="22.3%">
-                        <span>CSS</span>
-                        <span class="lang-percentage">22.3%</span>
-                    </li>
-                    <li class="lang-html" data-percentage="22.2%">
-                        <span>HTML</span>
-                        <span class="lang-percentage">22.2%</span>
-                    </li>
-                    <li class="lang-php" data-percentage="21.4%">
-                        <span>PHP</span>
-                        <span class="lang-percentage">21.4%</span>
-                    </li>
-                </ul>
-                <ul class="source-stats">
-                    <li>
-                        <h1>42</h1>
-                        <h2>Files</h2>
-                    </li>
-                    <li>
-                        <h1>2287</h1>
-                        <h2>Lines</h2>
-                    </li>
-                </ul>
-                <p>
-                    Vent was built as an experiment. I was frustrated one day and I couldn't find a website to have
-                    a good vent.
-                    So, I developed vent. Vent has lot's of features that make it familiar, but also stand out.
-                </p>
+	<div class="card">
+		<h1 id="projects">Projects.</h1>
+		<ul class="projects">
+			<li>
+				<h1>Vent.</h1>
+				<h2>Vent. A new idea for social media.</h2>
+				<div class="video-container">
+					<iframe width="1280" height="720"
+							src="https://www.youtube-nocookie.com/embed/VFuji611Vh4?rel=0&amp;controls=0&amp;showinfo=0?ecver=1"
+							frameborder="0" allowfullscreen></iframe>
+				</div>
+				<h3 class="source-yes">Source code available on request.</h3>
+				<ul class="language-stats">
+					<li class="lang-js" data-percentage="34.1%">
+						<span>JavaScript</span>
+						<span class="lang-percentage">34.1%</span>
+					</li>
+					<li class="lang-css" data-percentage="22.3%">
+						<span>CSS</span>
+						<span class="lang-percentage">22.3%</span>
+					</li>
+					<li class="lang-html" data-percentage="22.2%">
+						<span>HTML</span>
+						<span class="lang-percentage">22.2%</span>
+					</li>
+					<li class="lang-php" data-percentage="21.4%">
+						<span>PHP</span>
+						<span class="lang-percentage">21.4%</span>
+					</li>
+				</ul>
+				<ul class="source-stats">
+					<li>
+						<h1>42</h1>
+						<h2>Files</h2>
+					</li>
+					<li>
+						<h1>2287</h1>
+						<h2>Lines</h2>
+					</li>
+				</ul>
+				<p>
+					Vent was built as an experiment. I was frustrated one day and I couldn't find a website to have
+					a good vent.
+					So, I developed vent. Vent has lot's of features that make it familiar, but also stand out.
+				</p>
 
-            </li>
-            <li>
-                <h1>Factory Game</h1>
-                <h2>A complex factory simulator built with Unity.</h2>
-                <div class="video-container">
-                    <iframe width="1280" height="720"
-                            src="https://www.youtube-nocookie.com/embed/4ndA0NMgqVU?rel=0&amp;controls=0&amp;showinfo=0?ecver=1"
-                            frameborder="0" allowfullscreen></iframe>
-                </div>
-                <h3 class="source-no" style="padding: 5px 5px 10px;">Source code not available.</h3>
+			</li>
+			<li>
+				<h1>Factory Game</h1>
+				<h2>A complex factory simulator built with Unity.</h2>
+				<div class="video-container">
+					<iframe width="1280" height="720"
+							src="https://www.youtube-nocookie.com/embed/4ndA0NMgqVU?rel=0&amp;controls=0&amp;showinfo=0?ecver=1"
+							frameborder="0" allowfullscreen></iframe>
+				</div>
+				<h3 class="source-no" style="padding: 5px 5px 10px;">Source code not available.</h3>
 
-                <ul class="language-stats">
-                    <li class="lang-csharp" data-percentage="100%">
-                        <span>C#</span>
-                        <span class="lang-percentage">100%</span>
-                    </li>
-                </ul>
-                <ul class="source-stats">
-                    <li>
-                        <h1>162</h1>
-                        <h2>Files</h2>
-                    </li>
-                    <li>
-                        <h1>6462</h1>
-                        <h2>Lines</h2>
-                    </li>
-                </ul>
+				<ul class="language-stats">
+					<li class="lang-csharp" data-percentage="100%">
+						<span>C#</span>
+						<span class="lang-percentage">100%</span>
+					</li>
+				</ul>
+				<ul class="source-stats">
+					<li>
+						<h1>162</h1>
+						<h2>Files</h2>
+					</li>
+					<li>
+						<h1>6462</h1>
+						<h2>Lines</h2>
+					</li>
+				</ul>
 
-                <p>
-                    The unnamed game "Factory Game" is an in progress game about factory simulation.
-                    The objective of the game is to become rich by completing contracts external contracts, selling
-                    property and being smart with your funds.
-                    The game is also a challenge as you have to manage the limited space in your factory.
-                </p>
-            </li>
-            
-        </ul>
-    </div>
+				<p>
+					The unnamed game "Factory Game" is an in progress game about factory simulation.
+					The objective of the game is to become rich by completing contracts external contracts, selling
+					property and being smart with your funds.
+					The game is also a challenge as you have to manage the limited space in your factory.
+				</p>
+			</li>
 
-    <div class="card">
-        <h1>More Projects.</h1>
-        <ul class="projects">
-            <li>
-                <h1>Unity UI Examples</h1>
-                <h2>Unity3D - C# - Python 3</h2>
+		</ul>
+	</div>
 
-                <div class="project-logos">
-                    <img src="assets/unity.png">
-                    <img src="assets/dotnet.png">
-                    <img src="assets/python.png">
-                </div>
-                <p>
-                    Unity UI Examples is an open source, community driven UI collection.
-                    It includes a bunch of high quality examples for screen space and world space.
-                    Some of the examples take inspiration from other games, and some of the examples are generic.
-                    This way users can fork the repo and start making their dream game just a little bit faster.
-                    <br><br>
-                    <a class="border smooth" href="https://github.com/LewisJohnson/unity-ui-examples">Unity UI Examples Repository</a>
-                </p>
-            </li>
-            <li>
-                <h1>SketcherBook Pro</h1>
-                <h2>C# - XAML - Windows 10 UWP</h2>
-                <div class="project-logos">
-                    <img src="assets/dotnet.png">
-                    <img src="assets/win10.png">
-                </div>
-                <p>
-                    SketcherBook Pro is a full featured drawing app for Windows 10.
-                    The app includes a bunch of great features, including editable layers,
-                    sharing your drawings on social media, saving your drawing to edit later, exporting as an image,
-                    graphics tablet support, and many more features.
-                    <br><br>
-                    <a class="border smooth" href="https://github.com/LewisJohnson/Sketcherbook-Pro">SketcherBook
-                        Pro
-                        Repository</a>
-                </p>
-            </li>
-            <li>
-                <h1>Cycle London</h1>
-                <h2>C# - XAML - Windows 8.X Universal</h2>
+	<div class="card">
+		<h1>More Projects.</h1>
+		<ul class="projects">
+			<li>
+				<h1>Unity UI Examples</h1>
+				<h2>Unity3D - C# - Python 3</h2>
 
-                <div class="project-logos">
-                    <img src="assets/dotnet.png">
-                    <img src="assets/win10.png">
-                </div>
-                <p>
-                    Cycle London is 2 projects. The Windows 8.x app was developed and deployed to the store first,
-                    then it was superseded by the Windows 10 UWP app, London Universal.
-                    The app uses Bing maps &amp; TFL (Transport For London) public API's to help Londoners navigate by bike with ease.
-                    <br><br>
-                    <a class="border smooth" href="https://github.com/LewisJohnson/Cycle-London-Universal">Cycle
-                        London
-                        Repository</a>
-                    <br><br>
-                    <a class="border smooth" href="https://www.youtube.com/watch?v=-z3iZvoW3kw">Cycle London
-                        Demonstration (YouTube)</a>
-                </p>
-            </li>
+				<div class="project-logos">
+					<img src="assets/unity.png">
+					<img src="assets/dotnet.png">
+					<img src="assets/python.png">
+				</div>
+				<p>
+					Unity UI Examples is an open source, community driven UI collection.
+					It includes a bunch of high quality examples for screen space and world space.
+					Some of the examples take inspiration from other games, and some of the examples are generic.
+					This way users can fork the repo and start making their dream game just a little bit faster.
+					<br><br>
+					<a href="https://github.com/LewisJohnson/unity-ui-examples">Unity UI Examples Repository</a>
+				</p>
+			</li>
+			<li>
+				<h1>SketcherBook Pro</h1>
+				<h2>C# - XAML - Windows 10 UWP</h2>
+				<div class="project-logos">
+					<img src="assets/dotnet.png">
+					<img src="assets/win10.png">
+				</div>
+				<p>
+					SketcherBook Pro is a full featured drawing app for Windows 10.
+					The app includes a bunch of great features, including editable layers,
+					sharing your drawings on social media, saving your drawing to edit later, exporting as an image,
+					graphics tablet support, and many more features.
+					<br><br>
+					<a href="https://github.com/LewisJohnson/Sketcherbook-Pro">SketcherBook
+						Pro
+						Repository</a>
+				</p>
+			</li>
+			<li>
+				<h1>Cycle London</h1>
+				<h2>C# - XAML - Windows 8.X Universal</h2>
 
-            <li>
-                <h1>London Universal</h1>
-                <h2>C# - XAML - Windows 10 UWP</h2>
-                <div class="project-logos">
-                    <img src="assets/dotnet.png">
-                    <img src="assets/win10.png">
-                </div>
-                <p>
-                    London Universal is an app, which helps Londoners navigate the city by showing travel
-                    information
-                    for everyone, no matter how they're getting around.
-                    Cycle Hire, Super Cycle Highways, CabWise, Tube Stations, Oyster TopUp Spots &amp; much more.
-                    <br><br>
-                    <a class="border smooth" href="https://github.com/lewisjohnson/LondonUniversal-Win10">London
-                        Universal Repository</a>
-                    <br><br>
-                    <a class="border smooth" href="https://www.youtube.com/watch?v=TmxVBkGhrqg">London Universal
-                        Demonstration (YouTube)</a>
-                </p>
-            </li>
+				<div class="project-logos">
+					<img src="assets/dotnet.png">
+					<img src="assets/win10.png">
+				</div>
+				<p>
+					Cycle London is 2 projects. The Windows 8.x app was developed and deployed to the store first,
+					then it was superseded by the Windows 10 UWP app, London Universal.
+					The app uses Bing maps &amp; TFL (Transport For London) public API's to help Londoners navigate by bike with ease.
+					<br><br>
+					<a href="https://github.com/LewisJohnson/Cycle-London-Universal">Cycle
+						London
+						Repository</a>
+					<br><br>
+					<a href="https://www.youtube.com/watch?v=-z3iZvoW3kw">Cycle London
+						Demonstration (YouTube)</a>
+				</p>
+			</li>
 
-            <li>
-                <h1>p2crypt</h1>
-                <h2>C# - Windows - Linux - Mac</h2>
-                <div class="project-logos">
-                    <img src="assets/dotnet.png">
-                    <img src="assets/win10.png">
-                    <img src="assets/linux.png">
-                    <img src="assets/apple.png">
-                </div>
-                <p>
-                    p2crypt was an open source, peer-to-peer, end-to-end encrypted chat client for Windows, with
-                    MacOS and Linux support in the pipeline.
-                    The app looks great and is a lightweight alternative to other heavy chat applications such as
-                    Discord or Skype.
-                    Unfortunately, the servers have since been terminated.
-                    <br><br>
-                    <a class="border smooth" href="https://github.com/LewisJohnson/p2crypt">p2crypt Repository
-                        (Personal
-                        Fork)</a>
-                </p>
-            </li>
-            <li>
-                <h1>lewisjohnson.github.io</h1>
-                <h2>HTML - CSS - JavaScript</h2>
-                <div class="project-logos">
-                    <img src="assets/html5.png">
-                    <img src="assets/css.png">
-                    <img src="assets/js.png">
-                </div>
-                <p>
-                    That's right. The very same website you are on right now is available on Github for you to browse.
-                    It's a static website which uses mixture of vanilla javascript and JQuery, a heap of HTML 5 and a sprinkle of CSS 3.
-                    <br><br>
-                    <a class="border smooth" href="https://github.com/LewisJohnson/lewisjohnson.github.io">lewisjohnson.github.io Repository</a>
-                </p>
-            </li>
-            <li class="project-wide">
-                <h1>Even More Projects</h1>
-                <h2>GitHub &amp; Visual Studio Online</h2>
-                <div class="project-logos">
-                    <img src="assets/apple.png">
-                    <img src="assets/win10.png">
-                    <img src="assets/linux.png">
-                    <img src="assets/dotnet.png">
-                    <img src="assets/python.png">
-                    <img src="assets/unity.png">
-                    <img src="assets/html5.png">
-                    <img src="assets/css.png">
-                    <img src="assets/js.png">
-                </div>
-                <p>
-                    These are just my favourite projects, I have heaps more for you to browse on my GitHub profile. If
-                    you are a company, I am
-                    willing to send more project's (private repositories on Visual Studio Online) include source code
-                    samples.
-                    <br><br>
-                    <a class="border smooth" href="https://github.com/LewisJohnson/">GitHub Profile</a>
-                </p>
-            </li>
-        </ul>
-    </div>
+			<li>
+				<h1>London Universal</h1>
+				<h2>C# - XAML - Windows 10 UWP</h2>
+				<div class="project-logos">
+					<img src="assets/dotnet.png">
+					<img src="assets/win10.png">
+				</div>
+				<p>
+					London Universal is an app, which helps Londoners navigate the city by showing travel
+					information
+					for everyone, no matter how they're getting around.
+					Cycle Hire, Super Cycle Highways, CabWise, Tube Stations, Oyster TopUp Spots &amp; much more.
+					<br><br>
+					<a href="https://github.com/lewisjohnson/LondonUniversal-Win10">London
+						Universal Repository</a>
+					<br><br>
+					<a href="https://www.youtube.com/watch?v=TmxVBkGhrqg">London Universal
+						Demonstration (YouTube)</a>
+				</p>
+			</li>
+
+			<li>
+				<h1>p2crypt</h1>
+				<h2>C# - Windows - Linux - Mac</h2>
+				<div class="project-logos">
+					<img src="assets/dotnet.png">
+					<img src="assets/win10.png">
+					<img src="assets/linux.png">
+					<img src="assets/apple.png">
+				</div>
+				<p>
+					p2crypt was an open source, peer-to-peer, end-to-end encrypted chat client for Windows, with
+					MacOS and Linux support in the pipeline.
+					The app looks great and is a lightweight alternative to other heavy chat applications such as
+					Discord or Skype.
+					Unfortunately, the servers have since been terminated.
+					<br><br>
+					<a href="https://github.com/LewisJohnson/p2crypt">p2crypt Repository
+						(Personal
+						Fork)</a>
+				</p>
+			</li>
+			<li>
+				<h1>lewisjohnson.github.io</h1>
+				<h2>HTML - CSS - JavaScript</h2>
+				<div class="project-logos">
+					<img src="assets/html5.png">
+					<img src="assets/css.png">
+					<img src="assets/js.png">
+				</div>
+				<p>
+					That's right. The very same website you are on right now is available on Github for you to browse.
+					It's a static website which uses mixture of vanilla javascript and JQuery, a heap of HTML 5 and a sprinkle of CSS 3.
+					<br><br>
+					<a href="https://github.com/LewisJohnson/lewisjohnson.github.io">lewisjohnson.github.io Repository</a>
+				</p>
+			</li>
+			<li class="project-wide">
+				<h1>Even More Projects</h1>
+				<h2>GitHub &amp; Visual Studio Online</h2>
+				<div class="project-logos">
+					<img src="assets/apple.png">
+					<img src="assets/win10.png">
+					<img src="assets/linux.png">
+					<img src="assets/dotnet.png">
+					<img src="assets/python.png">
+					<img src="assets/unity.png">
+					<img src="assets/html5.png">
+					<img src="assets/css.png">
+					<img src="assets/js.png">
+				</div>
+				<p>
+					These are just my favourite projects, I have heaps more for you to browse on my GitHub profile. If
+					you are a company, I am
+					willing to send more project's (private repositories on Visual Studio Online) include source code
+					samples.
+					<br><br>
+					<a href="https://github.com/LewisJohnson/">GitHub Profile</a>
+				</p>
+			</li>
+		</ul>
+	</div>
 </div>
 
 <div class="main-content">
-    <div class="card">
-        <h1 id="experience">Experience.</h1>
-        <h3>I have plenty of experience with:</h3>
-        <ul>
-            <li>Web development (CSS, HTML. JQuery, etc..)</li>
-            <li>C#</li>
-            <li>Java</li>
-            <li>Modern C++</li>
-            <li>Python 3.X</li>
-            <li>Unity3D</li>
-            <li>Unreal Engine</li>
-        </ul>
-        <h3>I'm familiar with:</h3>
-        <ul>
-            <li>Python 2.7</li>
-            <li>F#</li>
-            <li>ASP.NET</li>
-        </ul>
-    </div>
+	<div class="card">
+		<h1 id="experience">Experience.</h1>
+		<ul class="experience" style="padding-bottom: 1rem">
+			<li>
+				<h1>Loula and Deer</h1>
+				<h2>Full-Stack Web Developer</h2>
+				<p class="work-date">Sep. 2016 - Present</p>
+				<ul class="key-achiv">
+					<li>Redeveloped the website from the ground up to create an engaging user experience.</li>
+					<li><b>Increased</b> ’Added to cart’ conversions by <b>74%</b>.</li>
+					<li><b>Increased</b> ’Reached checkout’ conversions by <b>38%</b>.</li>
+					<li><b>Increased</b> ’Average order value’ conversions by <b>22%</b>.</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
 
-    <div class="card">
-        <h1 id="achievements">Achievements.</h1>
-        <div class="section-content">
-            <ul class="experience">
-                <li><a href="http://www.ewbchallenge.org/">Engineers Without Borders | Finalist</a></li>
-                <li><a href="http://www.sussex.ac.uk/ei/internal/forstudents/globaldesignchallenge">Sussex Global Design
-                    Challenge | Winner 2016</a></li>
-                <li><a href="http://www.autodesk.co.uk/training-and-certification/certification">Autodesk Maya 2015 |
-                    Certified Professional</a></li>
-                <li>
-                    <a href="https://www.worldskillsuk.org/worldskills-uk-competitions/find-a-competition/media-and-creative/3d-digital-game-art">Programmr
-                        London Hackathon | 2nd Place</a></li>
-                <li><a href="http://www.programmr.com/hired_london_hackathon">World Skills 3D modelling | 3rd Place</a>
-                </li>
-                <li>Published apps on the Windows Store</li>
-            </ul>
-        </div>
-    </div>
+	<div class="card skill">
+		<h1 id="skills">Skills.</h1>
+		<div class="skill-region-container">
+		<div class="skill-region">
+			<h3>Advanced</h3>
+			<ul class="skill-section">
+				<li>Web development</li>
+				<li>ASP.NET</li>
+				<li>PHP (Composer)</li>
+				<li>SQL (MySQL, MariaDB, SQLLite)</li>
+				<li>Javascript (JQuery, Vue.Js)</li>
+				<li>CSS (SASS)</li>
+				<li>Bowser, Gulp, Webpack</li>
+			</ul>
+			<ul class="skill-section">
+				<li>Languages</li>
+				<li>C#</li>
+				<li>Java</li>
+				<li>Liquid</li>
+			</ul>
+			<ul class="skill-section">
+				<li>Software</li>
+				<li>Unity3D</li>
+			</ul>
+		</div>
+		<div class="skill-region">
+			<h3>Getting There</h3>
+			<ul class="skill-section">
+				<li>Languages</li>
+				<li>Modern C++</li>
+				<li>Python</li>
+				<li>Bash</li>
+			</ul>
+			<ul class="skill-section">
+				<li>Software</li>
+				<li>Unreal Engine</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+	<div class="card">
+		<h1 id="achievements">Achievements.</h1>
+		<div class="section-content">
+			<ul class="achievements">
+				<li><a href="http://www.ewbchallenge.org/">Engineers Without Borders | Finalist</a></li>
+				<li><a href="http://www.sussex.ac.uk/ei/internal/forstudents/globaldesignchallenge">Sussex Global DesignChallenge | Winner 2016</a></li>
+				<li><a href="http://www.autodesk.co.uk/training-and-certification/certification">Autodesk Maya 2015 | Certified Professional</a></li>
+				<li><a href="https://www.worldskillsuk.org/worldskills-uk-competitions/find-a-competition/media-and-creative/3d-digital-game-art">ProgrammrLondon Hackathon | 2nd Place</a></li>
+				<li><a href="http://www.programmr.com/hired_london_hackathon">World Skills 3D modelling | 3rd Place</a></li>
+				<li>Published apps on the Windows Store</li>
+			</ul>
+		</div>
+	</div>
 </div>
 
 <div class="main-content">
 
-    <div class="card">
-        <h1 id="contact">Contact Me</h1>
+	<div class="card">
+		<h1 id="contact">Contact Me</h1>
 
-        <ul class="contact-list">
-            <li class="border smooth">
-                <a href="mailto:lewisjohnsondev@gmail.com?Subject=-SUBJECT%20(From%20portfolio%20website)">
-                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                    <p>lewisjohnsondev@gmail.com</p>
-                </a>
-            </li>
-            <li class="border smooth">
-                <a href="tel:07762097588">
-                    <i class="fa fa-phone" aria-hidden="true"></i>
-                    <p>07762097588</p>
-                </a>
-            </li>
-            <li class="border smooth">
-                <a href="https://github.com/LewisJohnson">
-                    <i class="fa fa-github" aria-hidden="true"></i>
-                    <p>GitHub</p>
+		<ul class="contact-list">
+			<li >
+				<a href="mailto:&#108;&#101;&#119;&#105;&#115;&#106;&#111;&#104;&#110;&#115;&#111;&#110;&#100;&#101;&#118;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">
+					<i class="fa fa-envelope" aria-hidden="true"></i>
+					<p>&#108;&#101;&#119;&#105;&#115;&#106;&#111;&#104;&#110;&#115;&#111;&#110;&#100;&#101;&#118;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</p>
+				</a>
 
-                </a>
-            </li>
-            <!--<li class="border smooth">-->
-            <!--<a href="https://twitter.com/lewisjohnsondev">-->
-            <!--<i class="fa fa-twitter" aria-hidden="true"></i>-->
-            <!--<p>Twitter</p>-->
-            <!--</a>-->
-            <!--</li>-->
-            <li class="border smooth">
-                <a href="http://stackoverflow.com/story/lewisjohnson">
-                    <i class="fa fa-stack-overflow" aria-hidden="true"></i>
-                    <p>Stack Overflow Story</p>
-                </a>
-            </li>
-        </ul>
-    </div>
+			</li>
+			<li >
+				<a href="tel:&#48;&#55;&#55;&#54;&#50;&#48;&#57;&#55;&#53;&#56;&#56;">
+					<i class="fa fa-phone" aria-hidden="true"></i>
+					<p>&#48;&#55;&#55;&#54;&#50;&#48;&#57;&#55;&#53;&#56;&#56;</p>
+				</a>
+			</li>
+			<li >
+				<a href="https://github.com/LewisJohnson">
+					<i class="fa fa-github" aria-hidden="true"></i>
+					<p>GitHub</p>
+
+				</a>
+			</li>
+			<!--<li >-->
+			<!--<a href="https://twitter.com/lewisjohnsondev">-->
+			<!--<i class="fa fa-twitter" aria-hidden="true"></i>-->
+			<!--<p>Twitter</p>-->
+			<!--</a>-->
+			<!--</li>-->
+			<li >
+				<a href="http://stackoverflow.com/story/lewisjohnson">
+					<i class="fa fa-stack-overflow" aria-hidden="true"></i>
+					<p>Stack Overflow Story</p>
+				</a>
+			</li>
+		</ul>
+	</div>
 </div>
 </body>
 </html>

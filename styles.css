@@ -1,14 +1,16 @@
+
+/*Orange: color: #ff4e00;*/
 * {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
 * ::selection {
-    background: #51fdff;
+    background: rgba(255, 78, 0, 0.19);
 }
 
 p {
-    color: #111111;
+    color: #5d5d5d;
 }
 
 ul {
@@ -67,7 +69,6 @@ ul {
 }
 
 .main-content {
-    padding: 2rem;
     max-width: 800px;
     margin: 0 auto;
 }
@@ -75,13 +76,17 @@ ul {
 .card {
     border-radius: 3px;
     background: #fff;
-    border-bottom: solid 1px #e4e4e4;
     margin: 0 0 2rem 0;
 }
 
 .card h1 {
     font-weight: 300;
     padding-bottom: 0;
+}
+
+.card > h1::first-letter {
+    font-weight: 400;
+    color: #ff4e00;
 }
 
 .card h2 {
@@ -92,14 +97,15 @@ ul {
 }
 
 .card a {
-    color: black;
+    color: #252525;
     font-weight: 600;
     text-decoration: none;
-    transition: all 0.3s;
+    transition: all 0.18s;
 }
 
-.card a:hover {
-    color: #2c288b;
+.card a:hover, .card a:focus {
+    text-decoration: underline;
+    color: #ff4e00;
 }
 
 .card p {
@@ -202,27 +208,26 @@ ul {
     display: block;
     padding: 2rem 1.2rem;
     margin: 0;
-    transition: all 0.5s ease;
+    transition: all 0.28s;
     background: none;
     border: none;
     text-align: center;
     font-size: 16px;
+    outline: 0;
+}
+.nav-desktop ul li button:hover, .nav-desktop ul li button:focus {
+    color: #ff4e00;
+    font-weight: 600;
 }
 
 .nav-desktop ul > :first-child button {
     padding: 0.7rem 6.1rem 2rem 1.5rem;
     margin: 1.2rem 1rem 1rem;
-    border: 2px solid white;
+    border: 2px solid #ff4e00;
     max-width: 100px;
     max-height: 30px;
 }
-
-.nav-desktop ul li button:hover {
-    color: #96a7c1;
-    font-weight: 600;
-}
-
-.nav-desktop ul > :first-child :hover {
+.nav-desktop ul > :first-child :hover, .nav-desktop ul > :first-child :focus {
     background: white;
     color: black;
     outline: 3px solid black;
@@ -275,15 +280,18 @@ ul {
 }
 
 /* Project */
-.projects {
+.projects, .experience, .skill-section {
     display: flex;
     flex-flow: wrap;
 }
 
 .projects > li {
-    width: 50%;
     display: inline-block;
+    width: 48%;
+    margin: 1%;
     padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 
 .projects .project-wide {
@@ -432,6 +440,107 @@ ul.source-stats li h2 {
     margin: 0;
 }
 
+.experience > li {
+    display: inline-block;
+    width: 98%;
+    margin: 1%;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.experience > li h1 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    margin: 0;
+}
+
+.experience > li h2 {
+    text-align: center;
+    font-weight: 300;
+    padding: 0;
+    font-size: 16px;
+    margin: 2px;
+    margin-bottom: 2rem;
+}
+
+.experience > li .work-link {
+    font-weight: 100;
+    color: #ff4e00;
+}
+
+.key-achiv{
+    list-style: none;
+}
+
+.key-achiv li{
+    margin-bottom: 3px;
+}
+
+.key-achiv > li:before {
+    content: '-';
+    margin-right: 5px;
+}
+
+p.work-date{
+    float: right;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: -5rem;
+    color: #ff4e00;
+}
+
+.skill-section{
+    list-style: none;
+    display: inline-block;
+    width: 100%;
+    margin: 1%;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.skill-section > li{
+    margin-bottom: 3px;
+}
+
+.skill-section > li:first-child{
+    font-size: 20px;
+    margin-bottom: 12px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+.skill-section > li:not(:first-child):before {
+    content: '-';
+    margin-right: 5px;
+}
+
+.skill-section > li:not(:first-child){
+    color: #5d5d5d;
+}
+
+.skill-region{
+    display: inline-block;
+    width: 48%;
+    margin: 1%;
+}
+
+.skill-region-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.achievements{
+    list-style: none;
+}
+
+.achievements > li{
+    margin-bottom: 4px;
+}
+
 @media screen and (max-width: 700px) {
 
     .nav-desktop {
@@ -446,9 +555,6 @@ ul.source-stats li h2 {
         margin: 1rem;
     }
 
-    .card ul{
-        padding: 0 1rem 1rem;
-    }
 
     .main-content {
         padding: 0;
@@ -465,14 +571,22 @@ ul.source-stats li h2 {
     }
 
     /* Project page */
-    .projects {
+    .projects, .experience, .skill-region-container {
         display: flex;
         flex-flow: column;
     }
 
-    .projects li {
+    .skill-region{
+        margin: 0;
+        width: 100%;
+    }
+
+    .projects li, .experience li {
         width: 100%;
         display: block;
-        padding: 0;
+    }
+
+    .experience > li h1, .experience > li h2 {
+        text-align: left;
     }
 }
