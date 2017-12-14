@@ -22,7 +22,6 @@ $(function () {
 
     languageAnimate();
     animateHelloHeader();
-    $('#hamburger').click(HamburgerToggle);
 
     var lang_stats = document.getElementsByClassName('language-stats');
     for (var i = 0; i < lang_stats.length; ++i) {
@@ -81,6 +80,8 @@ $(function () {
         }
         setTimeout(animateHelloHeader, 400);
     }
+    
+     $('#hamburger').on('click', HamburgerToggle());
 });
 
 
