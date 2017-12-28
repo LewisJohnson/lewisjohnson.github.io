@@ -10,7 +10,7 @@ var languageList = [
     ".NET",
     "JAVA",
     "WEB",
-    "Python"
+    "PYTHON"
 ];
 
 $(function () {
@@ -65,13 +65,6 @@ $(function () {
         }
     });
 
-    function HamburgerToggle() {
-        ham_el1.toggleClass("on");
-        ham_el2.toggleClass("on");
-        ham_el3.toggleClass("on");
-        $(".nav-mobile").toggleClass("open");
-    }
-
     function animateHelloHeader() {
         if ($(helloHeader).text() === "Hello...") {
             $(helloHeader).text("Hello...|");
@@ -81,7 +74,12 @@ $(function () {
         setTimeout(animateHelloHeader, 400);
     }
     
-     $('#hamburger').on('click', HamburgerToggle());
+     $('#hamburger').on('click', function() {
+        ham_el1.toggleClass("on");
+        ham_el2.toggleClass("on");
+        ham_el3.toggleClass("on");
+        $(".nav-mobile").toggleClass("open");
+    });
 });
 
 
