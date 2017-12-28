@@ -75,10 +75,11 @@ $(function () {
     }
     
      $('#hamburger').on('click', function() {
-        ham_el1.toggleClass("on");
-        ham_el2.toggleClass("on");
-        ham_el3.toggleClass("on");
-        $(".nav-mobile").toggleClass("open");
+        ham_el1.toggleClass("on", true);
+        ham_el2.toggleClass("on", true);
+        ham_el3.toggleClass("on", true);
+        $(".nav-mobile").toggleClass("open", true);
+        $(".mobile-underlay").toggleClass("open", true);
     });
 });
 
