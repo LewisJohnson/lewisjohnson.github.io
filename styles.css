@@ -117,7 +117,7 @@ ul {
 /* Mobile Header */
 .nav-mobile {
     position: fixed;
-    background: black;
+    background: rgb(37, 37, 37);
     z-index: 3;
     height: 100%;
     width: 20rem;
