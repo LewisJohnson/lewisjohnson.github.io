@@ -215,6 +215,7 @@ ul {
 	font-size: 16px;
 	outline: 0;
 }
+
 .nav-desktop ul li button:hover, .nav-desktop ul li button:focus {
 	color: #ff4e00;
 	font-weight: 600;
@@ -234,6 +235,7 @@ ul {
 
 .nav-mobile {
 	display: none;
+	background: rgb(37, 37, 37);
 }
 
 .nav-mobile ul {
