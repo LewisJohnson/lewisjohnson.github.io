@@ -24,6 +24,29 @@ $(function () {
     animateHelloHeader();
     $('#hamburger').click(HamburgerToggle);
 
+    var animatedSelector = ".card";
+    $(animatedSelector).css("opacity", 0);
+
+    // Animate all cards
+    var animatedEntranceAnimationDelay = 0;
+
+    // So the scroll bar doesn't show
+    $('body').css('overflow-y', 'hidden');
+    $(animatedSelector).each(function(index, value) {
+        animatedEntranceAnimationDelay += 50;
+        setTimeout(function(){
+            $(this).addClass("slideInUp animated");
+
+            $(this).animate({
+                opacity: 1
+            }, 800);
+
+        }.bind(this), animatedEntranceAnimationDelay);
+    });
+
+    // So we can scroll again
+    $('body').css('overflow-y', 'scroll');
+
     var lang_stats = document.getElementsByClassName('language-stats');
     for (var i = 0; i < lang_stats.length; ++i) {
         var list = lang_stats[i];
