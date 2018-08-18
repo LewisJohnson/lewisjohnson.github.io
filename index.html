@@ -29,8 +29,9 @@
 		<main class="mdl-layout__content">
 			<section class="mdl-layout__tab-panel is-active" id="portfolio">
 				<div class="page-content">
-					<div class="mdl-layout__video">
-						<h1 id="title-text">Lewis Johnson</h1>
+
+					<div class="mdl-layout__hero">
+						<h1>Lewis Johnson</h1>
 						<div class="language-ticker">
 							<span>
 								<p id="title">WEB</p>
@@ -46,7 +47,6 @@
 
 					<div class="content-container" id="top">
 						<div class="fluid-container">
-
 							<ul id="nav-bar-ul" style="display: none">
 								<li>
 									<button class="mdl-button mdl-navigation__link" onclick="scrollToAnchor('cv')">CV</button>
@@ -100,6 +100,7 @@
 							<p>A copy of my CV/Résumé is available on request.</p>
 						</div>
 
+						<!-- PROJECTS -->
 						<div class="fluid-container">
 							<h1 id="projects">Projects.</h1>
 							<div class="mdl-grid">
@@ -246,6 +247,7 @@
 							</div>
 						</div>
 
+						<!-- EXPERIENCE -->
 						<div class="fluid-container">
 							<h1 id="experience">Experience.</h1>
 							<div class="mdl-grid">
@@ -480,6 +482,7 @@
 							</div>
 						</div>
 
+						<!-- SKILLS -->
 						<div class="fluid-container">
 							<h1 id="skills">Skills.</h1>
 							<div class="mdl-grid">
@@ -622,42 +625,51 @@
 									</ul>
 								</ul>
 							</div>
+						</div>
 
-							<div class="fluid-container">
-								<h1 id="achievements">Achievements.</h1>
-								<ul class="mdl-list">
-									<li class="mdl-list__item">
-										<span class="mdl-list__item-primary-content">
-											<a target="_blank" href="http://www.ewbchallenge.org/">Engineers Without Borders | Finalist</a>
-										</span>
-									</li>
-									<li class="mdl-list__item">
-										<span class="mdl-list__item-primary-content">
-											<a target="_blank" href="http://www.sussex.ac.uk/ei/internal/forstudents/globaldesignchallenge">Sussex Global DesignChallenge | Winner 2016</a>
-										</span>
-									</li>
-									<li class="mdl-list__item">
-										<span class="mdl-list__item-primary-content">
-											<a target="_blank" href="http://www.autodesk.co.uk/training-and-certification/certification">Autodesk Maya 2015 | Certified Professional</a>
-										</span>
-									</li>
-									<li class="mdl-list__item">
-										<span class="mdl-list__item-primary-content">
-											<a target="_blank" href="https://www.worldskillsuk.org/worldskills-uk-competitions/find-a-competition/media-and-creative/3d-digital-game-art">ProgrammrLondon Hackathon | 2nd Place</a>
-										</span>
-									</li>
-									<li class="mdl-list__item">
-										<span class="mdl-list__item-primary-content">
-											<a target="_blank" href="http://www.programmr.com/hired_london_hackathon">World Skills 3D modelling | 3rd Place</a>
-										</span>
-									</li>
-									<li class="mdl-list__item">
-										<span class="mdl-list__item-primary-content">
-											Published apps on the Windows Store
-										</span>
-									</li>
-								</ul>
-							</div>
+						<!-- MORE PROJECTS -->
+						<div class="fluid-container">
+							<h1 id="achievements">Achievements.</h1>
+							<table class="mdl-data-table mdl-js-data-table" style="width: 100%;margin-bottom: 4rem;">
+								<thead>
+									<tr>
+										<th class="mdl-data-table__cell--non-numeric">Award</th>
+										<th>Year</th>
+										<th class="mdl-data-table__cell--non-numeric">Achieved</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="mdl-data-table__cell--non-numeric"><a target="_blank" href="http://www.ewbchallenge.org/">Engineers Without Borders</a></td>
+										<td>2016</td>
+										<td class="mdl-data-table__cell--non-numeric">Finalist</td>
+									</tr>
+
+									<tr>
+										<td class="mdl-data-table__cell--non-numeric"><a target="_blank" href="http://www.sussex.ac.uk/ei/internal/forstudents/globaldesignchallenge">Sussex Global Design Challenge</a></td>
+										<td>2016</td>
+										<td class="mdl-data-table__cell--non-numeric">Winner</td>
+									</tr>
+
+									<tr>
+										<td class="mdl-data-table__cell--non-numeric"><a target="_blank" href="http://www.autodesk.co.uk/training-and-certification/certification">Autodesk Maya</a></td>
+										<td>2015</td>
+										<td class="mdl-data-table__cell--non-numeric">Certified Professional</td>
+									</tr>
+
+									<tr>
+										<td class="mdl-data-table__cell--non-numeric"><a target="_blank" href="http://www.programmr.com/hired_london_hackathon">ProgrammrLondon Hackathon</a></td>
+										<td>2015</td>
+										<td class="mdl-data-table__cell--non-numeric">2nd Place</td>
+									</tr>
+
+									<tr>
+										<td class="mdl-data-table__cell--non-numeric"><a target="_blank" href="https://www.worldskillsuk.org/worldskills-uk-competitions/find-a-competition/media-and-creative/3d-digital-game-art">World Skills UK 3D modelling</a></td>
+										<td>2015</td>
+										<td class="mdl-data-table__cell--non-numeric">3rd Place</td>
+									</tr>
+								</tbody>
+							</table>
 						</div>
 					</div>
 				<!-- Page content end -->
@@ -667,17 +679,82 @@
 			<!-- FREELANCE TAB -->
 			<section class="mdl-layout__tab-panel" id="freelance">
 				<div class="page-content">
-					<div class="fluid-container">
-						<h1>Shopify Expert.</h1>
-						<div>
-							<p>Hello, I'm Lewis Johnson. I have been developing Shopify websites, front-end and backend for many years.</p>
-							<p>
-								I worked at <a target="_blank" href="https://www.loulaanddeer.co.uk">Loula and Deer</a> for years using Shopify.
-								I developed the website from the ground up for the best user experience for our customers, and to boost conversions.
-								I have also worked on <a target="_blank" href="https://prattlondon.com/">Pratt London</a>, a premium swimwear retailer. I reworked nearly 
-								every single page on the website, bringing it up to scratch with their competitors and boosting sales.
-							</p>
-							<p>If you need someone to developer, design or set-up your Shopify website, contact me.</p>
+					<div class="mdl-layout__hero">
+						<h1>Freelance</h1>
+						<div class="language-ticker">
+							<span>
+								<p>STATUS:</p>
+								<p style="color: #85ff85;">AVAILABLE</p>
+							</span>
+						</div>
+						<img src="assets/images/freelance.jpg">
+						<div class="image-overlay"></div>
+					</div>
+
+					<div class="content-container">
+						<div class="fluid-container flex-container">
+							<div class="card-wide mdl-card mdl-shadow--2dp">
+								<div id="shopify-title" class="mdl-card__title">
+									<h2 class="mdl-card__title-text">Shopify Expert</h2>
+								</div>
+								<div class="mdl-card__supporting-text">
+									<p>Did you know I'm a Shopify Expert? Well you do now! Not only am I a Shopify expect, I've also been developing Shopify websites, front-end and back-end for many years professionally.</p>
+									<p>
+										I worked at <a target="_blank" href="https://www.loulaanddeer.co.uk">Loula and Deer</a> for years.
+										The website rebuilt from the ground up to deliver the best user experience, and boosted conversions rates hugely.
+									</p>
+									<p>
+										I have also worked with <a target="_blank" href="https://prattlondon.com/">Pratt London</a>, a premium swimwear retailer.
+										I reworked nearly every single page on the website, bringing it up to scratch with their competitors and boosting sales.
+									</p>
+									<p>If you need someone to developer, design or set-up your Shopify platform, contact me.</p>
+								</div>
+								<div class="mdl-card__actions mdl-card--border">
+									<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+										Contact Me
+									</a>
+								</div>
+							</div>
+
+							<div class="card-wide mdl-card mdl-shadow--2dp">
+								<div id="fiverr-title" class="mdl-card__title">
+									<h2 class="mdl-card__title-text">Fiverr</h2>
+								</div>
+								<div class="mdl-card__supporting-text">
+									<p>
+										You can hire me, yes me, right now.
+										If you need a beautiful website/portfolio (Like this one) built quickly, head over to my fiverr page.
+										There you can hire me from as little as $25 (£20.58) to build your perfect website.
+									</p>
+									<p>
+										If you want to skip the middle man, or are looking for something to build something on a larger scale, contact me directly.
+										I can also work on PHP and ASP.NET websites.
+									</p>
+								</div>
+								<div class="mdl-card__actions mdl-card--border">
+									<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="https://www.fiverr.com/lewisjohnsondev">
+										Hire Me
+									</a>
+								</div>
+							</div>
+
+							<div class="card-full mdl-card mdl-shadow--2dp">
+								<div class="mdl-card__title">
+									<h2 class="mdl-card__title-text">Freelance Work</h2>
+								</div>
+								<div class="mdl-card__supporting-text">
+									<p>
+										I am currently available for freelance work.
+										If you need a developer who is an expert in Web, ASP.NET, C#, PHP, Java, Python and Liquid (Shopify) you should contact me.
+										I can kick start a new project or help maintain an existing application. 
+									</p>
+								</div>
+								<div class="mdl-card__actions mdl-card--border">
+									<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+										Contact Me
+									</a>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -685,38 +762,46 @@
 
 			<section class="mdl-layout__tab-panel" id="contact">
 				<div class="page-content">
-					<div class="fluid-container">
-						<h1>Let's Talk.</h1>
-						<ul class="mdl-list">
-							<li class="mdl-list__item">
-								<span class="mdl-list__item-primary-content">
-									<i class="material-icons mdl-list__item-icon">email</i>
-									<a target="_blank" href="mailto:&#108;&#101;&#119;&#105;&#115;&#106;&#111;&#104;&#110;&#115;&#111;&#110;&#100;&#101;&#118;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">
-										&#108;&#101;&#119;&#105;&#115;&#106;&#111;&#104;&#110;&#115;&#111;&#110;&#100;&#101;&#118;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;
-									</a>
-								</span>
-							</li>
-							<li class="mdl-list__item">
-								<span class="mdl-list__item-primary-content">
-									<i class="material-icons mdl-list__item-icon">phone</i>
-									<a target="_blank" href="tel:&#48;&#55;&#55;&#54;&#50;&#48;&#57;&#55;&#53;&#56;&#56;">
-										&#48;&#55;&#55;&#54;&#50;&#48;&#57;&#55;&#53;&#56;&#56;
-									</a>
-								</span>
-							</li>
-							<li class="mdl-list__item">
-								<span class="mdl-list__item-primary-content">
-									<i class="material-icons mdl-list__item-icon">public</i>
-									<a target="_blank" href="https://github.com/LewisJohnson">
-										GitHub
-									</a>
-								</span>
-							</li>
-						</ul>
+
+					<div class="mdl-layout__hero">
+						<h1 style="background: rgba(0, 0, 0, 0.25);">Let's Talk</h1>
+						<img src="assets/images/contact.jpg">
+					</div>
+
+					<div class="content-container">
+						<div class="fluid-container">
+							<p>Here is a picture I captured in Switzerland on holiday. Now we're acquainted, let's keep in touch.</p>
+							<ul class="mdl-list">
+								<li class="mdl-list__item">
+									<span class="mdl-list__item-primary-content">
+										<i class="material-icons mdl-list__item-icon">email</i>
+										<a target="_blank" href="mailto:&#108;&#101;&#119;&#105;&#115;&#106;&#111;&#104;&#110;&#115;&#111;&#110;&#100;&#101;&#118;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">
+											&#108;&#101;&#119;&#105;&#115;&#106;&#111;&#104;&#110;&#115;&#111;&#110;&#100;&#101;&#118;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;
+										</a>
+									</span>
+								</li>
+								<li class="mdl-list__item">
+									<span class="mdl-list__item-primary-content">
+										<i class="material-icons mdl-list__item-icon">phone</i>
+										<a target="_blank" href="tel:&#48;&#55;&#55;&#54;&#50;&#48;&#57;&#55;&#53;&#56;&#56;">
+											&#48;&#55;&#55;&#54;&#50;&#48;&#57;&#55;&#53;&#56;&#56;
+										</a>
+									</span>
+								</li>
+								<li class="mdl-list__item">
+									<span class="mdl-list__item-primary-content">
+										<i class="material-icons mdl-list__item-icon">public</i>
+										<a target="_blank" href="https://github.com/LewisJohnson">
+											GitHub
+										</a>
+									</span>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</section>
 		</main>
-	</div>	
+	</div>
 </body>
 </html>

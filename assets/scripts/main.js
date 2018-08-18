@@ -49,15 +49,15 @@ $(function () {
 	});
 
 	$('.mdl-layout__content').scroll(function () {
-		$(".mdl-layout__video video").css({ 
+		$(".mdl-layout__hero video, .mdl-layout__hero img").css({ 
 			'top': (-$(this).scrollTop()) / 0.7
 		});
 
-		$(".mdl-layout__video h1").css({ 
+		$(".mdl-layout__hero h1").css({ 
 			'top': (-$(this).scrollTop()) / 0.9
 		});
 
-		$(".mdl-layout__video .language-ticker").css({ 
+		$(".mdl-layout__hero .language-ticker").css({ 
 			'top': ((-$(this).scrollTop()) / 0.8) - 140
 		});
 
