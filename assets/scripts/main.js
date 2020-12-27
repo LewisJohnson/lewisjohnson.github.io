@@ -1,3 +1,4 @@
+// Globals
 var header_dev_text, helloHeader;
 var hamburger_hidden = true;
 var languageAnimateArrayIndex = 0;
@@ -42,67 +43,76 @@ $(function () {
 	// So we can scroll again
 	$('body').css('overflow-y', 'auto');
 
-	$(".language-stats").each(function() {
-		$(this).children('li').each(function() {
+	$(".language-stats").each(function ()
+	{
+		$(this).children('li').each(function ()
+		{
 			$(this).css('width', $(this).data('percentage') + '%');
 		});
 	});
 
-	$('.mdl-layout__content').scroll(function () {
-		$(".mdl-layout__hero video, .mdl-layout__hero img").css({ 
-			'top': (-$(this).scrollTop()) / 0.7
-		});
+	$('.mdl-layout__content').scroll(function ()
+	{
+		$(".mdl-layout__hero video, .mdl-layout__hero img").css({ 'top': (-$(this).scrollTop()) / 0.7 });
 
-		$(".mdl-layout__hero h1").css({ 
-			'top': (-$(this).scrollTop()) / 0.9
-		});
+		$(".mdl-layout__hero h1").css({ 'top': (-$(this).scrollTop()) / 0.9 });
+		$(".mdl-layout__hero .language-ticker").css({ 'top': ((-$(this).scrollTop()) / 0.8) - 140 });
 
-		$(".mdl-layout__hero .language-ticker").css({ 
-			'top': ((-$(this).scrollTop()) / 0.8) - 140
-		});
-
-		if ($(this).scrollTop() > 370) {
+		if ($(this).scrollTop() > 370)
+		{
 			$('#nav-bar-ul').fadeIn(400);
-		} else {
+		}
+		else
+		{
 			$('#nav-bar-ul').fadeOut(100);
 		}
 	});
 
-	function animateHelloHeader() {
+	function animateHelloHeader()
+	{
 		if ($(helloHeader).text() === "Hello...") {
 			$(helloHeader).text("Hello...|");
-		} else {
+		}
+		else
+		{
 			$(helloHeader).text("Hello...");
 		}
 		setTimeout(animateHelloHeader, 400);
 	}
 });
 
-function scrollToAnchor(id) {
+function scrollToAnchor(id)
+{
 	var tag = $("#"+id+"");
 	$('.mdl-layout__content').animate({
 		scrollTop: $(tag).offset().top
 	}, 300);
 }
 
-function languageAnimate() {
+function languageAnimate()
+{
 	header_dev_text = $('.language-ticker #title');
 	header_dev_text.text(languageList[languageAnimateArrayIndex]);
+
 	if (languageList.length - 1 !== languageAnimateArrayIndex) {
 		languageAnimateArrayIndex++;
 	}
-	else {
+	else
+	{
 		languageAnimateArrayIndex = 0;
 	}
+
 	setTimeout(languageAnimateStart, 500);
 }
 
-function languageAnimateStart() {
+function languageAnimateStart()
+{
 	header_dev_text.css("opacity", '1');
 	setTimeout(languageAnimateEnd, 2000);
 }
 
-function languageAnimateEnd() {
+function languageAnimateEnd()
+{
 	header_dev_text.css("opacity", '0');
 	setTimeout(languageAnimate, 500);
 }
