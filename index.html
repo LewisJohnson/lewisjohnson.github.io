@@ -19,7 +19,7 @@
 <body>
 	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs">
 		<header class="mdl-layout__header">
-			<!-- Tabs -->
+			<!-- TAB SELECTOR -->
 			<div class="mdl-layout__tab-bar mdl-js-ripple-effect">
 				<a href="#portfolio" class="mdl-layout__tab is-active">Portfolio</a>
 				<a href="#freelance" class="mdl-layout__tab">Freelance</a>
@@ -27,9 +27,10 @@
 			</div>
 		</header>
 		<main class="mdl-layout__content">
+
+			<!-- PORTFOLIO TAB -->
 			<section class="mdl-layout__tab-panel is-active" id="portfolio">
 				<div class="page-content">
-
 					<div class="mdl-layout__hero">
 						<h1>Lewis Johnson</h1>
 						<div class="language-ticker">
@@ -75,26 +76,27 @@
 									<button class="mdl-button mdl-navigation__link" onclick="scrollToAnchor('top')">BACK TO TOP</button>
 								</li>
 							</ul>
-							<h1 id="hello">System.GetString("Hello");</h1>
+							<h1 id="hello">Hello...</h1>
 							<p>
-								Hello, I'm Lewis Johnson. I'm a graduate from the <a target="_blank" href="https://www.sussex.ac.uk">University of Sussex</a>,
-								where I studied computer science.
+								Hello hello, I’m Lewis! An established young professional with many years of experience working in the industry.
+								I graduated at the <a target="_blank" href="https://www.sussex.ac.uk">University of Sussex</a> studying Computer Science and have been a full-time developer ever since. 
+
 								I'm currently employed as a mobile cloud software developer at <a target="_blank" href="http://digitalk.com">Digitalk UK</a>.
-								I was previously full stack web developer at <a target="_blank" href="https://www.loulaanddeer.co.uk">Loula and
-								Deer</a> for a few years.
-								If you are interested, there is a list of personal projects and open source contributions for you to browse
-								at the bottom of the page.
+								I was previously full stack web developer at <a target="_blank" href="https://www.loulaanddeer.co.uk">Loula and Deer</a> for a few years.
+								If you are interested, there is a list of personal projects and open source contributions for you to browse at the bottom of the page.
+
 								<br><br>
-								Programming has been my passion for a seriously long time, so I have many years of experience in multiple
-								programming languages.
+								Programming has been my passion for a seriously long time, so I have many years of experience in multiple programming languages.
 								I have apps published on the Windows 8 and 10 store (Mobile &amp; Desktop), and Google Play store.
 								I have attended a fair few hackathons/competitions and placed well in every one I've attended.
+
 								<br><br>
 								If you feel like getting in touch with me, for any reason (including obtaining a copy of my CV) send me an
 								email or give me a call.
 							</p>
 						</div>
 
+						<!-- CV -->
 						<div class="fluid-container">
 							<h1 id="cv">Curriculum Vitae.</h1>
 							<p>A copy of my CV/Résumé is available on request.</p>
@@ -251,17 +253,21 @@
 						<div class="fluid-container">
 							<h1 id="experience">Experience.</h1>
 							<div class="mdl-grid">
+								<!-- Digitalk -->
 								<div class="mdl-card mdl-cell mdl-cell--12-col mdl-shadow--2dp">
 									<div class="mdl-card__title">
 										<h2 class="mdl-card__title-text">Digitalk UK</h2>
 										<h3 class="mdl-card__subtitle-text">Mobile Cloud Software Developer</h3>
-										<p class="mdl-card__subtitle-text mdl-card__work-date mdl-button--accent">Jul. 2018 - Present</p>
+										<p class="mdl-card__subtitle-text mdl-card__work-date mdl-button--accent">2018 - Present</p>
 									</div>
 									<div class="mdl-card__media">
 									</div>
 									<div class="mdl-card__supporting-text">
 										<ul class="key-achiv">
-											<li>Currently working on a VoIP platform used by hundreds of customers.</li>
+											<li>Maintain and improve on cloud services running ASP.NET, C# and C++</li>
+											<li>Given the autonomy to build my own application to manage SBC networks</li>
+											<li>Work closely with PO to deliver new features</li>
+											<li>Pick-up and squash bugs from support cases</li>
 										</ul>
 									</div>
 									<div class="mdl-card__actions mdl-card--border">
@@ -271,18 +277,41 @@
 									</div>
 								</div>
 
+								<!-- UoS -->
+								<div class="mdl-card mdl-cell mdl-cell--12-col mdl-shadow--2dp">
+									<div class="mdl-card__title">
+										<h2 class="mdl-card__title-text">University of Sussex</h2>
+										<h3 class="mdl-card__subtitle-text">Web Developer</h3>
+										<p class="mdl-card__subtitle-text mdl-card__work-date mdl-button--accent">2018 - Present</p>
+									</div>
+									<div class="mdl-card__media">
+									</div>
+									<div class="mdl-card__supporting-text">
+										After graduating, I was hired to add new features and maintain my dissertation project.
+										A website for final year students to select their final year projects.
+										The website started off small but has now ballooned with dozens of new features added and being used by hundreds of faculty members and students across a range of departments. 
+									</div>
+									<div class="mdl-card__actions mdl-card--border">
+										<a target="_blank" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="https://www.informatics.sussex.ac.uk/courses/Final-Year-Database">
+											Website
+										</a>
+									</div>
+								</div>
+
+								<!-- Loula And Deer -->
 								<div class="mdl-card mdl-cell mdl-cell--12-col mdl-shadow--2dp">
 									<div class="mdl-card__title">
 										<h2 class="mdl-card__title-text">Loula and Deer</h2>
 										<h3 class="mdl-card__subtitle-text">Full-Stack Web Developer</h3>
-										<p class="mdl-card__subtitle-text mdl-card__work-date mdl-button--accent">Sep. 2016 - Jun. 2018</p>
+										<p class="mdl-card__subtitle-text mdl-card__work-date mdl-button--accent">2016 - 2018</p>
 									</div>
 									<div class="mdl-card__supporting-text">
 										<ul class="key-achiv">
-											<li>Redeveloped the website from the ground up to create an engaging user experience.</li>
-											<li><b>Increased</b> ’Added to cart’ conversions by <b>74%</b>.</li>
-											<li><b>Increased</b> ’Reached checkout’ conversions by <b>38%</b>.</li>
-											<li><b>Increased</b> ’Average order value’ conversions by <b>22%</b>.</li>
+											<li>Redeveloped the website from the ground up to create an engaging user experience</li>
+											<li>Social Media Manager including SEO and advertising</li>
+											<li><b>Increased</b> ’Added to cart’ conversions by <b>74%</b></li>
+											<li><b>Increased</b> ’Reached checkout’ conversions by <b>38%</b></li>
+											<li><b>Increased</b> ’Average order value’ conversions by <b>22%</b></li>
 										</ul>
 									</div>
 									<div class="mdl-card__actions mdl-card--border">
@@ -487,12 +516,8 @@
 							<h1 id="skills">Skills.</h1>
 							<div class="mdl-grid">
 								<ul class="mdl-list mdl-cell mdl-cell--6-col">
+									<!-- Languages -->
 									<ul class="mdl-list">
-										<li class="mdl-list__item">
-											<span class="mdl-list__item-primary-content">
-												<h4>Advanced</h4>
-											</span>
-										</li>
 										<li class="mdl-list__item">
 											<span class="mdl-list__item-primary-content">
 												<h5>Languages</h5>
@@ -505,10 +530,22 @@
 										</li>
 										<li class="mdl-list__item">
 											<span class="mdl-list__item-primary-content">
+												C++
+											</span>
+										</li>
+										<li class="mdl-list__item">
+											<span class="mdl-list__item-primary-content">
 												Java
 											</span>
 										</li>
+										<li class="mdl-list__item">
+											<span class="mdl-list__item-primary-content">
+												Python
+											</span>
+										</li>
 									</ul>
+
+									<!-- Web Development -->
 									<ul class="mdl-list">
 										<li class="mdl-list__item">
 											<span class="mdl-list__item-primary-content">
@@ -517,14 +554,10 @@
 										</li>
 										<li class="mdl-list__item">
 											<span class="mdl-list__item-primary-content">
-												PHP (Laravel, Composer)
+												PHP&nbsp;<small>(Laravel, Composer)</small>
 											</span>
 										</li>
-										<li class="mdl-list__item">
-											<span class="mdl-list__item-primary-content">
-												SQL (MySQL, MariaDB, SQLLite)
-											</span>
-										</li>
+
 										<li class="mdl-list__item">
 											<span class="mdl-list__item-primary-content">
 												ASP.NET
@@ -532,12 +565,12 @@
 										</li>
 										<li class="mdl-list__item">
 											<span class="mdl-list__item-primary-content">
-												Javascript (JQuery, Vue.Js)
+												Javascript&nbsp;<small>(JQuery, Vue.Js)</small>
 											</span>
 										</li>
 										<li class="mdl-list__item">
 											<span class="mdl-list__item-primary-content">
-												CSS (SASS)
+												CSS&nbsp;<small>(SASS, LESS)</small>
 											</span>
 										</li>
 										<li class="mdl-list__item">
@@ -551,65 +584,43 @@
 											</span>
 										</li>
 									</ul>
-									<ul class="mdl-list">
-										<li class="mdl-list__item">
-											<span class="mdl-list__item-primary-content">
-												<h5>Software</h5>
-											</span>
-										</li>
-										<li class="mdl-list__item">
-											<span class="mdl-list__item-primary-content">
-												Unity 3D
-											</span>
-										</li>
-									</ul>
 								</ul>
 
-								<!-- Getting there list -->
 								<ul class="mdl-list mdl-cell mdl-cell--6-col">
+									<!-- Databases -->
 									<ul class="mdl-list">
 										<li class="mdl-list__item">
 											<span class="mdl-list__item-primary-content">
-												<h4>Getting There</h4>
+												<h5>Databases</h5>
 											</span>
 										</li>
 										<li class="mdl-list__item">
 											<span class="mdl-list__item-primary-content">
-												<h5>Languages</h5>
+												MySQL
 											</span>
 										</li>
 										<li class="mdl-list__item">
 											<span class="mdl-list__item-primary-content">
-												Modern C++
+												SQL Server <small>(MsSQL)</small>
 											</span>
 										</li>
 										<li class="mdl-list__item">
 											<span class="mdl-list__item-primary-content">
-												Python
+												MonetDB
+											</span>
+										</li>
+										<li class="mdl-list__item">
+											<span class="mdl-list__item-primary-content">
+												SQLite
 											</span>
 										</li>
 									</ul>
-									<ul class="mdl-list">
-										<li class="mdl-list__item">
-											<span class="mdl-list__item-primary-content">
-												<h5>Software</h5>
-											</span>
-										</li>
-										<li class="mdl-list__item">
-											<span class="mdl-list__item-primary-content">
-												Unreal Engine
-											</span>
-										</li>
-									</ul>
+
+									<!-- Cloud Services -->
 									<ul class="mdl-list">
 										<li class="mdl-list__item">
 											<span class="mdl-list__item-primary-content">
 												<h5>Cloud Services</h5>
-											</span>
-										</li>
-										<li class="mdl-list__item">
-											<span class="mdl-list__item-primary-content">
-												Firebase
 											</span>
 										</li>
 										<li class="mdl-list__item">
@@ -623,14 +634,41 @@
 											</span>
 										</li>
 									</ul>
+
+									<!-- Software -->
+									<ul class="mdl-list">
+										<li class="mdl-list__item">
+											<span class="mdl-list__item-primary-content">
+												<h5>Software & More</h5>
+											</span>
+										</li>
+										<li class="mdl-list__item">
+											<span class="mdl-list__item-primary-content">
+												Unity
+											</span>
+										</li>
+
+										<li class="mdl-list__item">
+											<span class="mdl-list__item-primary-content">
+												Unreal Engine
+											</span>
+										</li>
+
+										<li class="mdl-list__item">
+											<span class="mdl-list__item-primary-content">
+												Git, SVN
+											</span>
+										</li>
+									</ul>
 								</ul>
 							</div>
 						</div>
 
-						<!-- MORE PROJECTS -->
-						<div class="fluid-container">
+						<!-- ACHIEVEMENTS -->
+						<div class="fluid-container" style="padding-bottom: 1rem;">
 							<h1 id="achievements">Achievements.</h1>
-							<table class="mdl-data-table mdl-js-data-table" style="width: 100%;margin-bottom: 4rem;">
+
+							<table class="mdl-data-table mdl-js-data-table" style="width: 100%;">
 								<thead>
 									<tr>
 										<th class="mdl-data-table__cell--non-numeric">Award</th>
@@ -672,7 +710,6 @@
 							</table>
 						</div>
 					</div>
-				<!-- Page content end -->
 				</div>
 			</section>
 
@@ -681,17 +718,17 @@
 				<div class="page-content">
 					<div class="mdl-layout__hero">
 						<h1>Freelance</h1>
-						<div class="language-ticker">
+						<div class="language-ticker" style="background-color: black;">
 							<span>
 								<p>STATUS:</p>
-								<p style="color: #85ff85;">AVAILABLE</p>
+								<p style="color: #ff4151;">UNAVAILABLE</p>
 							</span>
 						</div>
 						<img src="assets/images/freelance.jpg">
 						<div class="image-overlay"></div>
 					</div>
 
-					<div class="content-container">
+					<div class="content-container" style="filter: blur(5px)">
 						<div class="fluid-container flex-container">
 							<div class="card-wide mdl-card mdl-shadow--2dp">
 								<div id="shopify-title" class="mdl-card__title">
@@ -760,9 +797,9 @@
 				</div>
 			</section>
 
+			<!-- CONTACT TAB -->
 			<section class="mdl-layout__tab-panel" id="contact">
 				<div class="page-content">
-
 					<div class="mdl-layout__hero">
 						<h1 style="background: rgba(0, 0, 0, 0.25);">Let's Talk</h1>
 						<img src="assets/images/contact.jpg">
@@ -790,7 +827,15 @@
 								</li>
 								<li class="mdl-list__item">
 									<span class="mdl-list__item-primary-content">
-										<i class="material-icons mdl-list__item-icon">public</i>
+										<i class="material-icons mdl-list__item-icon">groups</i>
+										<a target="_blank" href="https://www.linkedin.com/in/lewis-johnson-b78b23201">
+											LinkedIn
+										</a>
+									</span>
+								</li>
+								<li class="mdl-list__item">
+									<span class="mdl-list__item-primary-content">
+										<i class="material-icons mdl-list__item-icon">code</i>
 										<a target="_blank" href="https://github.com/LewisJohnson">
 											GitHub
 										</a>

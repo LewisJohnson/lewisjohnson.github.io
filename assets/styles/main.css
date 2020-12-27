@@ -18,10 +18,16 @@ ul{
 	margin: 0 auto;
 }
 
+.fluid-container > h1 {
+	font-size: 42px;
+	margin-bottom: 12px;
+}
+
 .fluid-container > h1::first-letter {
 	font-weight: 400;
 	color: rgb(255, 110, 64);
 }
+
 
 .flex-container {
 	display: flex;

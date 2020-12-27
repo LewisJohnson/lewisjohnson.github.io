@@ -1,17 +1,20 @@
 // Globals
-var header_dev_text, helloHeader;
-var hamburger_hidden = true;
+var headerDevText, helloHeader;
+
+var hamburgerHidden = true;
 var languageAnimateArrayIndex = 0;
+
 var languageList = [
 	"SOFTWARE",
+	"CLOUD",
 	"UNITY",
 	"C#",
 	"UNREAL ENGINE",
 	"C++",
 	".NET",
-	"JAVA",
 	"WEB",
-	"PYTHON"
+	"PYTHON",
+	"PHP"
 ];
 
 $(function () {
@@ -51,10 +54,9 @@ $(function () {
 		});
 	});
 
-	$('.mdl-layout__content').scroll(function ()
+	$('.mdl-layout__content').on('scroll', function ()
 	{
 		$(".mdl-layout__hero video, .mdl-layout__hero img").css({ 'top': (-$(this).scrollTop()) / 0.7 });
-
 		$(".mdl-layout__hero h1").css({ 'top': (-$(this).scrollTop()) / 0.9 });
 		$(".mdl-layout__hero .language-ticker").css({ 'top': ((-$(this).scrollTop()) / 0.8) - 140 });
 
@@ -83,16 +85,15 @@ $(function () {
 
 function scrollToAnchor(id)
 {
-	var tag = $("#"+id+"");
-	$('.mdl-layout__content').animate({
-		scrollTop: $(tag).offset().top
-	}, 300);
+	var url = location.href;
+    location.href = "#"+id;
+    history.replaceState(null,null,url);
 }
 
 function languageAnimate()
 {
-	header_dev_text = $('.language-ticker #title');
-	header_dev_text.text(languageList[languageAnimateArrayIndex]);
+	headerDevText = $('.language-ticker #title');
+	headerDevText.text(languageList[languageAnimateArrayIndex]);
 
 	if (languageList.length - 1 !== languageAnimateArrayIndex) {
 		languageAnimateArrayIndex++;
@@ -102,17 +103,17 @@ function languageAnimate()
 		languageAnimateArrayIndex = 0;
 	}
 
-	setTimeout(languageAnimateStart, 500);
+	setTimeout(languageAnimateStart, 300);
 }
 
 function languageAnimateStart()
 {
-	header_dev_text.css("opacity", '1');
+	headerDevText.css("opacity", '1');
 	setTimeout(languageAnimateEnd, 2000);
 }
 
 function languageAnimateEnd()
 {
-	header_dev_text.css("opacity", '0');
+	headerDevText.css("opacity", '0');
 	setTimeout(languageAnimate, 500);
 }
